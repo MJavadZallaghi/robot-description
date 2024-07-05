@@ -12,3 +12,8 @@ Make the executable:
 Parse/check your SDF:
 
 5. ```./check_sdf <path/to/model.sdf>```  
+
+
+
+## Reference of SDF:
+[SDFormant Documntations](http://sdformat.org/tutorials?)
