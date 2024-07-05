@@ -2,11 +2,11 @@
 I'll add SDF and URDF files, their C++/python parser, and other tools for working with simulation description format of robots into this repo.
 
 ## How to use SDF parser?
-1. Make the executable:
-a. ```cd sdf_parser/```
-b. ```mkdir build && cd build```
-c. ```cmake ..```
-d. ```make```
+Make the executable:
+1. ```cd sdf_parser/```
+2. ```mkdir build && cd build```
+3. ```cmake ..```
+4. ```make```
 
-2. Parse/check your SDF:
-```./check_sdf <path/to/model.sdf>```  
+Parse/check your SDF:
+5. ```./check_sdf <path/to/model.sdf>```  
