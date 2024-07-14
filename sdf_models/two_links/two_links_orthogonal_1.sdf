@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+
+<world name="two_link_world">
+
+<model name="two_links_orthogonal_1">
+    <link name="linkA">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry> 
+            <cylinder> 
+            <length> 0.1 </length> 
+            <radius> 0.02 </radius>
+            </cylinder> 
+        </geometry>
+        <visual name="vizLinkA">
+            <geometry> 
+                <cylinder> 
+                <length> 0.1 </length> 
+                <radius> 0.02 </radius>
+                </cylinder> 
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="linkB">
+        <pose>0.1 0 0.1 0 0 0</pose>
+        <geometry> 
+            <cylinder> 
+            <length> 0.1 </length> 
+            <radius> 0.02 </radius>
+            </cylinder> 
+        </geometry>
+        <visual name="vizLinkB">
+            <geometry> 
+                <cylinder> 
+                <length> 0.1 </length> 
+                <radius> 0.02 </radius>
+                </cylinder> 
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="jointAB" type="revolute">
+        <pose>0 0 -0.1 0 0 0</pose>
+        <parent> linkA </parent>
+        <child> linkB </child>
+        <axis> <xyz> 0 1 0 </xyz> </axis>
+    </joint>
+
+    <joint name="joint_world" type="fixed">
+        <parent> world </parent>
+        <child> linkA </child>
+    </joint>
+</model>
+
+
+</world> 
+</sdf>
