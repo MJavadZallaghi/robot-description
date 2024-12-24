@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="single_tree">
+  <link name="World">
+    <visual>
+      <origin xyz="0.0053482 -0.0199603 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/leaves.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0053482 -0.0199603 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/leaves.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0053482 -0.0199603 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/trunk.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0053482 -0.0199603 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/trunk.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
